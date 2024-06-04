@@ -2,7 +2,7 @@ Name:           hyprwayland-scanner
 Version:        0.3.9
 Release:        1
 Summary:        A Hyprland implementation of wayland-scanner, in and for C++
-
+Group:          Hyprland
 License:        BSD-3-Clause
 URL:            https://github.com/hyprwm/hyprwayland-scanner
 Source:         %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
