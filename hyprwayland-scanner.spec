@@ -15,6 +15,7 @@ BuildRequires:  cmake(pugixml)
 
 %package        devel
 Summary:        A Hyprland implementation of wayland-scanner, in and for C++
+Requires:       %{name} = %{version}-%{release}
 
 %description    devel
 %{summary}.
@@ -28,9 +29,11 @@ Summary:        A Hyprland implementation of wayland-scanner, in and for C++
 %install
 %make_install -C build
 
+%files
+%{_bindir}/%{name}
+
 %files devel
 %license LICENSE
 %doc README.md
-%{_bindir}/%{name}
 %{_libdir}/pkgconfig/%{name}.pc
 %{_libdir}/cmake/%{name}/
