@@ -1,5 +1,5 @@
 Name:           hyprwayland-scanner
-Version:        0.4.5
+Version:        0.4.6
 Release:        1
 Summary:        A Hyprland implementation of wayland-scanner, in and for C++
 Group:          Hyprland
@@ -8,6 +8,7 @@ URL:            https://github.com/hyprwm/hyprwayland-scanner
 Source:         %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  cmake
+BuildRequires:	make
 BuildRequires:  cmake(pugixml)
 
 %description
